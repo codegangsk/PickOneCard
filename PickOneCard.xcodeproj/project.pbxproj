@@ -10,9 +10,7 @@
 		2A4B149226C176C600AACE40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B149126C176C600AACE40 /* AppDelegate.swift */; };
 		2A4B149426C176C600AACE40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B149326C176C600AACE40 /* SceneDelegate.swift */; };
 		2A4B149626C176C600AACE40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B149526C176C600AACE40 /* ViewController.swift */; };
-		2A4B149926C176C600AACE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4B149726C176C600AACE40 /* Main.storyboard */; };
 		2A4B149B26C176C600AACE40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A4B149A26C176C600AACE40 /* Assets.xcassets */; };
-		2A4B149E26C176C600AACE40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4B149C26C176C600AACE40 /* LaunchScreen.storyboard */; };
 		2A4B14A926C176C700AACE40 /* PickOneCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B14A826C176C700AACE40 /* PickOneCardTests.swift */; };
 		2A4B14B426C176C700AACE40 /* PickOneCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B14B326C176C700AACE40 /* PickOneCardUITests.swift */; };
 /* End PBXBuildFile section */
@@ -39,9 +37,7 @@
 		2A4B149126C176C600AACE40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A4B149326C176C600AACE40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2A4B149526C176C600AACE40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2A4B149826C176C600AACE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A4B149A26C176C600AACE40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2A4B149D26C176C600AACE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A4B149F26C176C600AACE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A4B14A426C176C700AACE40 /* PickOneCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickOneCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A4B14A826C176C700AACE40 /* PickOneCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickOneCardTests.swift; sourceTree = "<group>"; };
@@ -102,9 +98,7 @@
 				2A4B149126C176C600AACE40 /* AppDelegate.swift */,
 				2A4B149326C176C600AACE40 /* SceneDelegate.swift */,
 				2A4B149526C176C600AACE40 /* ViewController.swift */,
-				2A4B149726C176C600AACE40 /* Main.storyboard */,
 				2A4B149A26C176C600AACE40 /* Assets.xcassets */,
-				2A4B149C26C176C600AACE40 /* LaunchScreen.storyboard */,
 				2A4B149F26C176C600AACE40 /* Info.plist */,
 			);
 			path = PickOneCard;
@@ -231,9 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A4B149E26C176C600AACE40 /* LaunchScreen.storyboard in Resources */,
 				2A4B149B26C176C600AACE40 /* Assets.xcassets in Resources */,
-				2A4B149926C176C600AACE40 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,25 +286,6 @@
 			targetProxy = 2A4B14B026C176C700AACE40 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2A4B149726C176C600AACE40 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A4B149826C176C600AACE40 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2A4B149C26C176C600AACE40 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A4B149D26C176C600AACE40 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2A4B14B626C176C700AACE40 /* Debug */ = {
