@@ -17,6 +17,9 @@
 		2A4B14DB26C183E200AACE40 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2A4B14DA26C183E200AACE40 /* SnapKit */; };
 		2A4B14F726C3E28700AACE40 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B14F626C3E28700AACE40 /* Card.swift */; };
 		2A4B14FC26C3E29800AACE40 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B14FB26C3E29800AACE40 /* Cards.swift */; };
+		2A4B150126C4D36400AACE40 /* tarot-images.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A4B150026C4D36400AACE40 /* tarot-images.json */; };
+		2A4B150B26C4F3DD00AACE40 /* ParseJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B150A26C4F3DD00AACE40 /* ParseJson.swift */; };
+		2AAB8EA026C52D3500C1B5AA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAB8E9F26C52D3500C1B5AA /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		2A4B14B526C176C700AACE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A4B14F626C3E28700AACE40 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2A4B14FB26C3E29800AACE40 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		2A4B150026C4D36400AACE40 /* tarot-images.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tarot-images.json"; sourceTree = "<group>"; };
+		2A4B150A26C4F3DD00AACE40 /* ParseJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseJson.swift; sourceTree = "<group>"; };
+		2AAB8E9F26C52D3500C1B5AA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 		2A4B149026C176C600AACE40 /* PickOneCard */ = {
 			isa = PBXGroup;
 			children = (
+				2A4B150026C4D36400AACE40 /* tarot-images.json */,
 				2A4B149F26C176C600AACE40 /* Info.plist */,
 				2A4B14E326C2DCD300AACE40 /* Application */,
 				2A4B14E426C2DDB900AACE40 /* Presentation */,
@@ -145,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				2A4B149526C176C600AACE40 /* ViewController.swift */,
+				2AAB8E9F26C52D3500C1B5AA /* ViewController.xib */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -176,6 +184,7 @@
 		2A4B14EA26C2DFE800AACE40 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2A4B150A26C4F3DD00AACE40 /* ParseJson.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -291,6 +300,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4B150126C4D36400AACE40 /* tarot-images.json in Resources */,
+				2AAB8EA026C52D3500C1B5AA /* ViewController.xib in Resources */,
 				2A4B149B26C176C600AACE40 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +330,7 @@
 				2A4B14FC26C3E29800AACE40 /* Cards.swift in Sources */,
 				2A4B149626C176C600AACE40 /* ViewController.swift in Sources */,
 				2A4B149226C176C600AACE40 /* AppDelegate.swift in Sources */,
+				2A4B150B26C4F3DD00AACE40 /* ParseJson.swift in Sources */,
 				2A4B149426C176C600AACE40 /* SceneDelegate.swift in Sources */,
 				2A4B14F726C3E28700AACE40 /* Card.swift in Sources */,
 			);
