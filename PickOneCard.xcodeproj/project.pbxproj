@@ -18,8 +18,9 @@
 		2A4B14F726C3E28700AACE40 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B14F626C3E28700AACE40 /* Card.swift */; };
 		2A4B14FC26C3E29800AACE40 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B14FB26C3E29800AACE40 /* Cards.swift */; };
 		2A4B150126C4D36400AACE40 /* tarot-images.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A4B150026C4D36400AACE40 /* tarot-images.json */; };
-		2A4B150B26C4F3DD00AACE40 /* ParseJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B150A26C4F3DD00AACE40 /* ParseJson.swift */; };
+		2A4B150B26C4F3DD00AACE40 /* ParseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B150A26C4F3DD00AACE40 /* ParseJSON.swift */; };
 		2AAB8EA026C52D3500C1B5AA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAB8E9F26C52D3500C1B5AA /* ViewController.xib */; };
+		2AAB8EAD26C7998900C1B5AA /* TarotRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB8EAC26C7998900C1B5AA /* TarotRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +56,9 @@
 		2A4B14F626C3E28700AACE40 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2A4B14FB26C3E29800AACE40 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
 		2A4B150026C4D36400AACE40 /* tarot-images.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tarot-images.json"; sourceTree = "<group>"; };
-		2A4B150A26C4F3DD00AACE40 /* ParseJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseJson.swift; sourceTree = "<group>"; };
+		2A4B150A26C4F3DD00AACE40 /* ParseJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseJSON.swift; sourceTree = "<group>"; };
 		2AAB8E9F26C52D3500C1B5AA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		2AAB8EAC26C7998900C1B5AA /* TarotRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				2A4B150026C4D36400AACE40 /* tarot-images.json */,
-				2A4B150A26C4F3DD00AACE40 /* ParseJson.swift */,
+				2A4B150A26C4F3DD00AACE40 /* ParseJSON.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -201,6 +203,7 @@
 		2AAB8EAB26C7988900C1B5AA /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2AAB8EAC26C7998900C1B5AA /* TarotRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -346,9 +349,10 @@
 				2A4B14FC26C3E29800AACE40 /* Cards.swift in Sources */,
 				2A4B149626C176C600AACE40 /* ViewController.swift in Sources */,
 				2A4B149226C176C600AACE40 /* AppDelegate.swift in Sources */,
-				2A4B150B26C4F3DD00AACE40 /* ParseJson.swift in Sources */,
+				2A4B150B26C4F3DD00AACE40 /* ParseJSON.swift in Sources */,
 				2A4B149426C176C600AACE40 /* SceneDelegate.swift in Sources */,
 				2A4B14F726C3E28700AACE40 /* Card.swift in Sources */,
+				2AAB8EAD26C7998900C1B5AA /* TarotRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
