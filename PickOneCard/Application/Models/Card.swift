@@ -11,7 +11,7 @@ struct Card: Codable, Equatable {
     var name: String?
     var number: String?
     var arcana: String?
-    var img_url: URL?
+    var img_url: String?
 }
 
 

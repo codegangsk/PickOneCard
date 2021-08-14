@@ -27,9 +27,9 @@ class CardImageManager : SKSpriteNode {
         
         switch cardName {
         case .fool:
-            frontTexture = SKTexture(image: TarotRepository.init().loadCardImage())
-        }
+           frontTexture = SKTexture(image: ViewController.init().cardImage)
+    
         super.init(texture: frontTexture, color: .clear, size: frontTexture.size())
+        }
     }
 }
-
