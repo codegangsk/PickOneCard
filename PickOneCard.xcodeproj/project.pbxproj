@@ -21,6 +21,7 @@
 		2A4B150B26C4F3DD00AACE40 /* ParseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B150A26C4F3DD00AACE40 /* ParseJSON.swift */; };
 		2AAB8EA026C52D3500C1B5AA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AAB8E9F26C52D3500C1B5AA /* ViewController.xib */; };
 		2AAB8EAD26C7998900C1B5AA /* TarotRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB8EAC26C7998900C1B5AA /* TarotRepository.swift */; };
+		2AAB8EBE26C7A39D00C1B5AA /* TarotScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB8EBD26C7A39D00C1B5AA /* TarotScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		2A4B150A26C4F3DD00AACE40 /* ParseJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseJSON.swift; sourceTree = "<group>"; };
 		2AAB8E9F26C52D3500C1B5AA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		2AAB8EAC26C7998900C1B5AA /* TarotRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotRepository.swift; sourceTree = "<group>"; };
+		2AAB8EBD26C7A39D00C1B5AA /* TarotScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				2A4B149526C176C600AACE40 /* ViewController.swift */,
+				2AAB8EBD26C7A39D00C1B5AA /* TarotScene.swift */,
 				2AAB8E9F26C52D3500C1B5AA /* ViewController.xib */,
 			);
 			path = Presentation;
@@ -349,6 +352,7 @@
 				2A4B14FC26C3E29800AACE40 /* Cards.swift in Sources */,
 				2A4B149626C176C600AACE40 /* ViewController.swift in Sources */,
 				2A4B149226C176C600AACE40 /* AppDelegate.swift in Sources */,
+				2AAB8EBE26C7A39D00C1B5AA /* TarotScene.swift in Sources */,
 				2A4B150B26C4F3DD00AACE40 /* ParseJSON.swift in Sources */,
 				2A4B149426C176C600AACE40 /* SceneDelegate.swift in Sources */,
 				2A4B14F726C3E28700AACE40 /* Card.swift in Sources */,
@@ -519,7 +523,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sophiekim.PickOneCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -538,7 +542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sophiekim.PickOneCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
