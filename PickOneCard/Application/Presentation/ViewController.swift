@@ -13,7 +13,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadBackGround()
+        loadBackground()
+        loadCardImage()
     }
 }
 
@@ -27,5 +28,10 @@ extension ViewController {
         skView.ignoresSiblingOrder = false
         scene.scaleMode = .aspectFill
         skView.presentScene(scene)
+    }
+    
+    func loadCardImage() {
+        guard let url = TarotRepository.init().tarotRepository?.cards?[0].img_url else { return }
+        print(url)
     }
 }

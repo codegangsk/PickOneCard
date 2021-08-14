@@ -23,12 +23,15 @@ struct JSONFileReader {
     }
 }
 
-func parse(jsonData: Data) {
+func parse(jsonData: Data) -> Cards? {
     do {
         let decodedData = try JSONDecoder().decode(Cards.self, from: jsonData)
         print(decodedData.cards![0].name!)
         print(decodedData.cards![0].img_url!)
+        
+        return decodedData
     } catch {
         print("decode error")
     }
+    return nil
 }
