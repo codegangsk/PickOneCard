@@ -7,6 +7,7 @@
 
 import UIKit
 import SpriteKit
+import Kingfisher
 
 class ViewController: UIViewController {
     let skView = SKView()
@@ -14,7 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadBackground()
-        loadCardImage()
     }
 }
 
@@ -29,10 +29,5 @@ extension ViewController {
         scene.scaleMode = .aspectFill
         skView.presentScene(scene)
     }
-    
-    func loadCardImage() {
-        guard let url = TarotRepository.init().tarotRepository?.cards?[0].img_url else { return }
-        print(url)
-        
-    }
 }
+

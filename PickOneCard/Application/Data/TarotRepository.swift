@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct TarotRepository {
     var JSONData = JSONFileReader.readLocalJsonFile(forFileName: "tarot-images")!
@@ -13,5 +14,16 @@ struct TarotRepository {
     
     init() {
         self.tarotRepository = parse(jsonData: JSONData)
+    }
+}
+
+extension TarotRepository {
+    func loadCardImage() -> UIImage {
+        let cardImageView = UIImageView()
+        let url = TarotRepository.init().tarotRepository?.cards?[0].img_url
+        
+        cardImageView.kf.setImage(with :url)
+        
+        return cardImageView.image!
     }
 }
