@@ -156,8 +156,8 @@
 		2A4B14E426C2DDB900AACE40 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				2A4B149526C176C600AACE40 /* ViewController.swift */,
 				2AAB8EBD26C7A39D00C1B5AA /* TarotScene.swift */,
+				2A4B149526C176C600AACE40 /* ViewController.swift */,
 				2AAB8E9F26C52D3500C1B5AA /* ViewController.xib */,
 			);
 			path = Presentation;
