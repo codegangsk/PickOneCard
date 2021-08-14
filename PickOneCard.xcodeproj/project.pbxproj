@@ -91,6 +91,7 @@
 			children = (
 				2A4B149026C176C600AACE40 /* PickOneCard */,
 				2A4B14E926C2DFA200AACE40 /* Extension */,
+				2AAB8EA726C7978C00C1B5AA /* Networking */,
 				2A4B14EA26C2DFE800AACE40 /* Utilities */,
 				2A4B14E626C2DE0900AACE40 /* Assets */,
 				2A4B14A726C176C700AACE40 /* PickOneCardTests */,
@@ -112,11 +113,8 @@
 		2A4B149026C176C600AACE40 /* PickOneCard */ = {
 			isa = PBXGroup;
 			children = (
-				2A4B150026C4D36400AACE40 /* tarot-images.json */,
 				2A4B149F26C176C600AACE40 /* Info.plist */,
 				2A4B14E326C2DCD300AACE40 /* Application */,
-				2A4B14E426C2DDB900AACE40 /* Presentation */,
-				2A4B14E726C2DF6600AACE40 /* Models */,
 			);
 			path = PickOneCard;
 			sourceTree = "<group>";
@@ -144,6 +142,9 @@
 			children = (
 				2A4B149126C176C600AACE40 /* AppDelegate.swift */,
 				2A4B149326C176C600AACE40 /* SceneDelegate.swift */,
+				2A4B14E426C2DDB900AACE40 /* Presentation */,
+				2A4B14E726C2DF6600AACE40 /* Models */,
+				2AAB8EAB26C7988900C1B5AA /* Data */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -184,9 +185,24 @@
 		2A4B14EA26C2DFE800AACE40 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				2A4B150A26C4F3DD00AACE40 /* ParseJson.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2AAB8EA726C7978C00C1B5AA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2A4B150026C4D36400AACE40 /* tarot-images.json */,
+				2A4B150A26C4F3DD00AACE40 /* ParseJson.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2AAB8EAB26C7988900C1B5AA /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
