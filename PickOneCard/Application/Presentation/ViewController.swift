@@ -33,5 +33,6 @@ extension ViewController {
     func loadCardImage() {
         guard let url = TarotRepository.init().tarotRepository?.cards?[0].img_url else { return }
         print(url)
+        
     }
 }
