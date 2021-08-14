@@ -26,9 +26,7 @@ struct JSONFileReader {
 func parse(jsonData: Data) {
     do {
         let decodedData = try JSONDecoder().decode(Cards.self, from: jsonData)
-
-        print(decodedData.cards)
-        
+            print(decodedData.cards![0].name!)
     } catch {
         print("decode error")
     }
