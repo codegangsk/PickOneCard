@@ -17,8 +17,6 @@ struct CardsManager {
 extension CardsManager {
     var parsedCards: Cards? {
         let decodedData = JSONFileReader.readLocalJsonFile(forFileName: "tarot-images", for: Cards.self)!
-        print(decodedData.cards![0].name!)
-        print(decodedData.cards![0].img_url!)
         return decodedData
     }
 }

@@ -8,10 +8,9 @@
 import Foundation
 
 struct Card: Codable, Equatable {
-    var name: String?
+    var name_short: String?
     var number: String?
-    var arcana: String?
-    var img_url: String?
+    var type: String?
 }
 
 
