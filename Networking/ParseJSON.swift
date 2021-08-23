@@ -8,30 +8,18 @@
 import Foundation
 
 struct JSONFileReader {
-    static func readLocalJsonFile(forFileName name: String) -> Data? {
+    static func readLocalJsonFile<T: Decodable>(forFileName name: String, for type: T.Type) -> T? {
         do {
             guard let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
                   let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8)
             else { return nil }
-            
-            return jsonData
+                
+            let decodedData = try JSONDecoder().decode(type.self, from: jsonData)
+            return decodedData
         } catch {
             print(error)
         }
         
         return nil
     }
-}
-
-func parse(jsonData: Data) -> Cards? {
-    do {
-        let decodedData = try JSONDecoder().decode(Cards.self, from: jsonData)
-        print(decodedData.cards![0].name!)
-        print(decodedData.cards![0].img_url!)
-        
-        return decodedData
-    } catch {
-        print("decode error")
-    }
-    return nil
 }

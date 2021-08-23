@@ -7,6 +7,7 @@
 
 import Foundation
 import SpriteKit
+import UIKit
 
 class TarotScene: SKScene {
     override func didMove(to view: SKView) {
@@ -16,7 +17,7 @@ class TarotScene: SKScene {
         addChild(bg)
         
         let fool = CardImageManager(cardName: .fool)
-        fool.position = CGPoint(x:1000, y:200)
+        fool.position = CGPoint(x:500, y:400)
         addChild(fool)
     }
 }
