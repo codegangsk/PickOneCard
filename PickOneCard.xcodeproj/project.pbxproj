@@ -24,6 +24,7 @@
 		2AAB8ED526C7E17D00C1B5AA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2AAB8ED426C7E17D00C1B5AA /* Kingfisher */; };
 		2AAB8EDD26C7E3D500C1B5AA /* CardImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB8EDC26C7E3D500C1B5AA /* CardImageManager.swift */; };
 		2AAB8EF826CD65FE00C1B5AA /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB8EF726CD65FE00C1B5AA /* CardRepository.swift */; };
+		2AAB8F1126D4B76D00C1B5AA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB8F1026D4B76D00C1B5AA /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		2AAB8EBD26C7A39D00C1B5AA /* TarotScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotScene.swift; sourceTree = "<group>"; };
 		2AAB8EDC26C7E3D500C1B5AA /* CardImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageManager.swift; sourceTree = "<group>"; };
 		2AAB8EF726CD65FE00C1B5AA /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
+		2AAB8F1026D4B76D00C1B5AA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				2A4B150A26C4F3DD00AACE40 /* ParseJSON.swift */,
+				2AAB8F1026D4B76D00C1B5AA /* API.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AAB8F1126D4B76D00C1B5AA /* API.swift in Sources */,
 				2A4B14FC26C3E29800AACE40 /* Cards.swift in Sources */,
 				2A4B149626C176C600AACE40 /* ViewController.swift in Sources */,
 				2A4B149226C176C600AACE40 /* AppDelegate.swift in Sources */,
