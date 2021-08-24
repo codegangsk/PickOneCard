@@ -13,17 +13,17 @@ class API {
 }
 
 extension API {
-    func call<T: Decodable>(url: String, for data: T.Type, completion: ((Result<T, Error>) -> Void)? = nil) {
+    func call<T: Decodable>(url: String, for cards: T.Type, completion: ((Result<T, Error>) -> Void)? = nil) {
         AF
             .request(url)
             .validate()
-            .responseDecodable(of: data.self) { response in
+            .responseDecodable(of: cards.self) { response in
                 if let error = response.error {
                     completion?(.failure(error))
                 }
                 
-                if let data = response.value {
-                    completion?(.success(data))
+                if let cards = response.value {
+                    completion?(.success(cards))
                 }
                 
                 completion?(.failure("Unknown Error"))

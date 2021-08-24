@@ -27,7 +27,7 @@ class CardImageManager : SKSpriteNode {
         
         switch cardName {
         case .fool:
-            frontTexture = SKTexture(image: CardRepository.init().cardRepository)
+            frontTexture = SKTexture(imageNamed: "ar00")
         super.init(texture: frontTexture, color: .clear, size: frontTexture.size())
         }
     }

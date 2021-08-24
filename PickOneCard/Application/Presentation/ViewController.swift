@@ -30,5 +30,19 @@ extension ViewController {
         scene.scaleMode = .aspectFill
         skView.presentScene(scene)
     }
+    
+    func fetchCards() {
+        API.shared.call(url: "", for: Cards.self) { [weak self] response in
+             guard let self = self else { return }
+
+             switch response {
+             case .success(let ):
+                 let cards = cards.
+                 self.cards = cards!
+             case .failure(let error):
+                 break
+             }
+         }
+     }
 }
 
