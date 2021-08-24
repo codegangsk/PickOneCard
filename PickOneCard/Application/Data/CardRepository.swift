@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 import Alamofire
 
-struct CardRepository {
+/*struct CardRepository {
     var cardRepository : [Cards]
     
     init() {
     }
 }
-
+*/

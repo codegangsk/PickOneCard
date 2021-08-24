@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct CardsManager {
+/*struct CardsManager {
     static let shared = CardsManager()
     
     private init() {}
@@ -20,3 +20,4 @@ extension CardsManager {
         return decodedData
     }
 }
+*/

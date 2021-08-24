@@ -203,8 +203,8 @@
 		2AAB8EA726C7978C00C1B5AA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				2A4B150A26C4F3DD00AACE40 /* ParseJSON.swift */,
 				2AAB8F1026D4B76D00C1B5AA /* API.swift */,
+				2A4B150A26C4F3DD00AACE40 /* ParseJSON.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";

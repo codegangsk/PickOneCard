@@ -12,10 +12,12 @@ import Kingfisher
 class ViewController: UIViewController {
     let skView = SKView()
     var imageView = UIImageView()
+    var cards : [Card] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadBackground()
+        fetchCards()
     }
 }
 
@@ -32,12 +34,13 @@ extension ViewController {
     }
     
     func fetchCards() {
-        API.shared.call(url: "", for: Cards.self) { [weak self] response in
+        API.shared.call(url: "https://rws-cards-api.herokuapp.com/api/v1/cards", for: CardsResponse.self) {
+             [weak self] response in
              guard let self = self else { return }
 
              switch response {
-             case .success(let ):
-                 let cards = cards.
+             case .success(let cardsResponse):
+                 let cards = cardsResponse.cards
                  self.cards = cards!
              case .failure(let error):
                  break
