@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadBackground()
+        print(CardRepository.init().cardRepository)
     }
 }
 
