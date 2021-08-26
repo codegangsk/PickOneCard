@@ -1,5 +1,5 @@
 //
-//  API.swift
+//  NetworkService.swift
 //  PickOneCard
 //
 //  Created by Sophie Kim on 2021/08/24.
@@ -8,11 +8,11 @@
 import Foundation
 import Alamofire
 
-struct API {
-    static let shared = API()
+struct NetworkService {
+    static let shared = NetworkService()
 }
 
-extension API {
+extension NetworkService {
     func call<T: Decodable>(url: String, for cards: T.Type, completion: ((Result<T, Error>) -> Void)? = nil) {
         AF
             .request(url)
