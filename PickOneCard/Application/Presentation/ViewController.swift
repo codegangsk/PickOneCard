@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadBackground()
-        fetchCards()
-        print(cards)
     }
 }
 
