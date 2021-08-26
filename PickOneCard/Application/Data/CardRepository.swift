@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import UIKit
 import Alamofire
+import RxSwift
 
 struct CardRepository {
     let networkService : NetworkService
@@ -19,7 +19,7 @@ struct CardRepository {
 }
 
 extension CardRepository {
-   /* func fetchCards() -> CardsResponse {
+   func fetchCards() -> Observable<CardsResponse> {
         return networkService.call(url: <#T##String#>, for: <#T##Decodable.Protocol#>) {
              [weak self] response in
              guard let self = self else { return }
@@ -33,7 +33,7 @@ extension CardRepository {
                  break
              }
          }
-     } */
+     }
 }
 
 

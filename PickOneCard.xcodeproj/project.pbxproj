@@ -25,6 +25,11 @@
 		2AAB8EDD26C7E3D500C1B5AA /* CardImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB8EDC26C7E3D500C1B5AA /* CardImageManager.swift */; };
 		2AAB8EF826CD65FE00C1B5AA /* CardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB8EF726CD65FE00C1B5AA /* CardRepository.swift */; };
 		2AAB8F1126D4B76D00C1B5AA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB8F1026D4B76D00C1B5AA /* NetworkService.swift */; };
+		2AC44CCF26D7BEF000EE8ED1 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC44CCE26D7BEF000EE8ED1 /* RxSwift */; };
+		2AC44CD126D7BEF000EE8ED1 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC44CD026D7BEF000EE8ED1 /* RxTest */; };
+		2AC44CD326D7BEF000EE8ED1 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC44CD226D7BEF000EE8ED1 /* RxRelay */; };
+		2AC44CD526D7BEF000EE8ED1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC44CD426D7BEF000EE8ED1 /* RxCocoa */; };
+		2AC44CD726D7BEF000EE8ED1 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC44CD626D7BEF000EE8ED1 /* RxBlocking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +78,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC44CD326D7BEF000EE8ED1 /* RxRelay in Frameworks */,
+				2AC44CD126D7BEF000EE8ED1 /* RxTest in Frameworks */,
 				2AAB8ED526C7E17D00C1B5AA /* Kingfisher in Frameworks */,
+				2AC44CD526D7BEF000EE8ED1 /* RxCocoa in Frameworks */,
 				2A4B14DB26C183E200AACE40 /* SnapKit in Frameworks */,
+				2AC44CD726D7BEF000EE8ED1 /* RxBlocking in Frameworks */,
+				2AC44CCF26D7BEF000EE8ED1 /* RxSwift in Frameworks */,
 				2A4B14D226C182AC00AACE40 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +249,11 @@
 				2A4B14DA26C183E200AACE40 /* SnapKit */,
 				2A4B14D126C182AC00AACE40 /* Alamofire */,
 				2AAB8ED426C7E17D00C1B5AA /* Kingfisher */,
+				2AC44CCE26D7BEF000EE8ED1 /* RxSwift */,
+				2AC44CD026D7BEF000EE8ED1 /* RxTest */,
+				2AC44CD226D7BEF000EE8ED1 /* RxRelay */,
+				2AC44CD426D7BEF000EE8ED1 /* RxCocoa */,
+				2AC44CD626D7BEF000EE8ED1 /* RxBlocking */,
 			);
 			productName = PickOneCard;
 			productReference = 2A4B148E26C176C600AACE40 /* PickOneCard.app */;
@@ -315,7 +330,7 @@
 				2A4B14D926C183E200AACE40 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				2A4B14D026C182AC00AACE40 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				2AAB8ED326C7E17D00C1B5AA /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				2AC44CB726D7B3C900EE8ED1 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				2AC44CCD26D7BEF000EE8ED1 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 2A4B148F26C176C600AACE40 /* Products */;
 			projectDirPath = "";
@@ -441,7 +456,8 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTABILITY = NO;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -456,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -503,6 +519,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -511,7 +529,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -709,12 +727,12 @@
 				minimumVersion = 6.3.1;
 			};
 		};
-		2AC44CB726D7B3C900EE8ED1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		2AC44CCD26D7BEF000EE8ED1 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.2.0;
+				kind = exactVersion;
+				version = 5.1.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -734,6 +752,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2AAB8ED326C7E17D00C1B5AA /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		2AC44CCE26D7BEF000EE8ED1 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AC44CCD26D7BEF000EE8ED1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		2AC44CD026D7BEF000EE8ED1 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AC44CCD26D7BEF000EE8ED1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		2AC44CD226D7BEF000EE8ED1 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AC44CCD26D7BEF000EE8ED1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		2AC44CD426D7BEF000EE8ED1 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AC44CCD26D7BEF000EE8ED1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		2AC44CD626D7BEF000EE8ED1 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AC44CCD26D7BEF000EE8ED1 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
