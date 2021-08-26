@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 
-class API {
+struct API {
     static let shared = API()
 }
 

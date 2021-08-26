@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct JSONFileReader {
+/*struct JSONFileReader {
     static func readLocalJsonFile<T: Decodable>(forFileName name: String, for type: T.Type) -> T? {
         do {
             guard let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
@@ -23,3 +23,4 @@ struct JSONFileReader {
         return nil
     }
 }
+*/

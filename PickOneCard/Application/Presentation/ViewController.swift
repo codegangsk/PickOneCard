@@ -17,7 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadBackground()
-        print(CardRepository.init().cardRepository)
+        fetchCards()
+        print(cards)
     }
 }
 
@@ -32,5 +33,21 @@ extension ViewController {
         scene.scaleMode = .aspectFill
         skView.presentScene(scene)
     }
+    
+    func fetchCards() {
+        API.shared.call(url: "https://rws-cards-api.herokuapp.com/api/v1/cards", for: CardsResponse.self) {
+             [weak self] response in
+             guard let self = self else { return }
+
+             switch response {
+             case .success(let cardsResponse):
+                 let cards = cardsResponse.cards
+                 self.cards = cards!
+             case .failure(let error):
+                print(error)
+                 break
+             }
+         }
+     }
 }
 
