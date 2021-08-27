@@ -11,6 +11,14 @@ import RxSwift
 
 struct NetworkService {
     static let shared = NetworkService()
+    
+    private let session: Session = {
+        let configuration = URLSessionConfiguration.af.default
+        configuration.timeoutIntervalForRequest = 10.0
+        return Session(configuration: configuration)
+    }()
+    
+    private init() {}
 }
 
 extension NetworkService {
