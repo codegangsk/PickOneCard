@@ -30,6 +30,8 @@
 		2AC44CD526D7BEF000EE8ED1 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC44CD426D7BEF000EE8ED1 /* RxCocoa */; };
 		2AC44CD726D7BEF000EE8ED1 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 2AC44CD626D7BEF000EE8ED1 /* RxBlocking */; };
 		2AC44CDD26D7C05800EE8ED1 /* EndPointable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC44CDC26D7C05800EE8ED1 /* EndPointable.swift */; };
+		2AC44CE926D7C18100EE8ED1 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC44CE826D7C18100EE8ED1 /* EndPoint.swift */; };
+		2AC44CEE26D8F43D00EE8ED1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC44CED26D8F43D00EE8ED1 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		2AAB8EF726CD65FE00C1B5AA /* CardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRepository.swift; sourceTree = "<group>"; };
 		2AAB8F1026D4B76D00C1B5AA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2AC44CDC26D7C05800EE8ED1 /* EndPointable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointable.swift; sourceTree = "<group>"; };
+		2AC44CE826D7C18100EE8ED1 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		2AC44CED26D8F43D00EE8ED1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +219,8 @@
 			children = (
 				2AC44CDB26D7C03900EE8ED1 /* Protocols */,
 				2AAB8F1026D4B76D00C1B5AA /* NetworkService.swift */,
+				2AC44CED26D8F43D00EE8ED1 /* NetworkError.swift */,
+				2AC44CE826D7C18100EE8ED1 /* EndPoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -388,9 +394,11 @@
 				2A4B149626C176C600AACE40 /* ViewController.swift in Sources */,
 				2A4B149226C176C600AACE40 /* AppDelegate.swift in Sources */,
 				2AAB8EBE26C7A39D00C1B5AA /* TarotScene.swift in Sources */,
+				2AC44CE926D7C18100EE8ED1 /* EndPoint.swift in Sources */,
 				2A4B149426C176C600AACE40 /* SceneDelegate.swift in Sources */,
 				2A4B14F726C3E28700AACE40 /* Card.swift in Sources */,
 				2AAB8EF826CD65FE00C1B5AA /* CardRepository.swift in Sources */,
+				2AC44CEE26D8F43D00EE8ED1 /* NetworkError.swift in Sources */,
 				2AAB8EDD26C7E3D500C1B5AA /* CardImageManager.swift in Sources */,
 				2AAB8EAD26C7998900C1B5AA /* CardsManager.swift in Sources */,
 			);
